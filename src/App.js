@@ -10,12 +10,12 @@ import Testimonials from './components/Testimonials';
 
 function App() {
   return (
-    <React.Fragment className="App">
+    <React.Fragment >
      <Nav/>
-     <HeaderItem/>
-     <Hero/>
-     <Highlights/>
-     <Testimonials/>
+     <HeaderItem />
+     <Hero />
+     <Highlights />
+     <Testimonials />
      <Main/>
      <Footer/>
     </React.Fragment>

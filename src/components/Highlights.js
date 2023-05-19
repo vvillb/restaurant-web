@@ -2,7 +2,7 @@ import React from 'react'
 
 function Highlights() {
   return (
-    <div>
+    <div className='Highlights'>
       <h1> this will be the Highlights</h1>
     </div>
   )
