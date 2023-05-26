@@ -1,24 +1,17 @@
 import React from 'react';
-import './App.css';
-import Nav from './components/Nav';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import HeaderItem from './components/HeaderItem';
-import Hero from './components/Hero';
-import Highlights from './components/Highlights';
-import Testimonials from './components/Testimonials';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './router/AppRouter';
+import AppTheme from './ThemeLayout/AppTheme';
 
 function App() {
   return (
-    <React.Fragment >
-     <Nav/>
-     <HeaderItem />
-     <Hero />
-     <Highlights />
-     <Testimonials />
-     <Main/>
-     <Footer/>
-    </React.Fragment>
+    < >
+     <BrowserRouter>
+      <AppTheme>
+        <AppRouter/>
+      </AppTheme>
+    </BrowserRouter>
+    </>
   );
 }
 

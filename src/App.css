@@ -55,10 +55,24 @@ a:hover{
 a{
   text-decoration: none;
   color: #F4CE14;
+  
 }
 h2{
   color:#EE9972 ;
 }
 ul{
   list-style: none;
+}
+
+
+.navbar_container{
+  display: flblockex;
+  
+}
+
+.nav_ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:5%
 }
