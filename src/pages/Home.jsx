@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../ThemeLayout/Layout'
-import { Grid } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 
 const Home = () => {
   return (
@@ -9,7 +9,11 @@ const Home = () => {
         sx={{
             backgroundColor:'background.main'
         }}>
-           <h1>Virbakes</h1>>
+           <Typography variant='h1'
+           sx={{
+            paddingTop:'10vh',
+            color:'highlights.blue'
+           }}>Virbakes</Typography>
         </Grid>
       
     </Layout>

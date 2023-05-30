@@ -61,8 +61,8 @@ function Nav() {
       color:'white',
       justifyContent:'center',
       alignContent:'top',
-      height:'4vh'
-      
+      height:'4vh',
+      display:'grid'
     }}> 
     <Typography variant='h6'>hechos en casa con 🤍</Typography> 
     <Grid justifyContent="space-around" sx={{ flexGrow: 1 }}>
