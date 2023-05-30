@@ -1,11 +1,12 @@
 import React from 'react'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-import { Box, Toolbar } from '@mui/material'
+import { Box, Grid, Toolbar } from '@mui/material'
 
 const Layout = ({children}) => {
   return (
     <Box>
+      
     <Nav/>
     <Box>
         <Toolbar/>

@@ -1,46 +1,179 @@
 
-import { AppBar, Box, Button, IconButton, Toolbar, Typography } from '@mui/material'
+import { AppBar, Box, Button, Drawer, Grid, IconButton, List, ListItem, Toolbar, Typography } from '@mui/material'
 import React from 'react'
 import { MenuOutlined } from '@mui/icons-material';
-import { Link } from 'react-router-dom';
+import {Link as RouterLink} from 'react-router-dom';
+import Link from '@mui/material/Link';
 
+
+const navItems = [
+  { id:1, title: 'home', path: '/' },
+  { id:2, title: 'productos', path: '/products' },
+  { id:3, title: 'contacto', path: '/contact' },
+  
+];
 
 
 function Nav() {
+  const [drawerOpen, setDrawerOpen] = React.useState(false);
+
+  const handleDrawerToggle = () => {
+    setDrawerOpen((prevState) => !prevState);
+  };
+
+  const drawer = (
+    <Grid sx={{ width: 250, backgroundColor:'background.pink' ,minHeight:'100vh'}}>
+      <List>
+        {navItems.map((item) => (
+          <ListItem key={item.id} disablePadding>
+            <Link component={RouterLink} to={item.path} onClick={handleDrawerToggle} underline="none"
+>
+            <Button
+            sx={{ 
+              
+              
+              ':hover':{
+                color:'highlights.green'
+              }
+             }
+             
+            } >
+              <Button 
+              sx={{
+                
+              }} />{item.title}
+            </Button>
+            </Link>
+          </ListItem>
+        ))}
+      </List>
+    </Grid>
+  );
+
   return (
- 
-      <Box sx={{ 
-        flexGrow: 1 ,
+    <Grid container>
+    <Grid
+    justifyContent='center'
+    sx={{
+      backgroundColor:'highlights.green',
+      maxWidth:'100vw', 
+      position: 'fixed', left: 0, right: 0,top:0,
+      color:'white',
+      justifyContent:'center',
+      alignContent:'top',
+      height:'4vh'
+      
+    }}> 
+    <Typography variant='h6'>hechos en casa con 🤍</Typography> 
+    <Grid justifyContent="space-around" sx={{ flexGrow: 1 }}>
+     
+
+
+    </Grid>
        
-      }}
-      >
-        <AppBar position="static"
-        sx={{
-          backgroundColor:'background.main'
-        }}>
-          <Toolbar>
+        <AppBar   sx={{maxWidth:'100vw', position: 'fixed', left: 0, right: 0,top:'4vh'}}>
+          <Toolbar  sx={{textAlign:'left', justifyContent:'space-around',backgroundColor:'background.pink'}}>
             <IconButton
               size="large"
               edge="start"
-              color="inherit"
+              color="highlights.blue"
               aria-label="menu"
-              sx={{ mr: 2 }}
+              sx={{ mr: 2, display: { md: 'none' } }}
+              onClick={handleDrawerToggle}
             >
               <MenuOutlined />
             </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 , color:'highlights.green'}}>
-              Virbakes
+            <Grid  container justifyContent='flex-start'
+            >
+            <Link to='/'  sx={{ flexGrow: 1 }} underline="none" component={RouterLink}
+>
+            <Button variant='string'
+            sx={{
+              ':hover':{
+                color:'dark.main'
+              }
+            }}
+            >
+             <Typography variant="h6"   sx={{textTransform:'none', flexGrow: 1 ,color:'highlights.blue',':hover':{color:'backgorund.main'}}}> 
+              virbakes
             </Typography>
-            <Link to='/contact'><Button color="inherit">contacto</Button></Link>
-            <Button color="inherit">home</Button>
+            </Button>
             
-            
-
+            </Link>
+            </Grid>
+            <Grid container sx={{ display: { xs: 'none', md: 'flex' }}}>
+            <Grid sx={{ display:'flex', justifyContent:'flex-end', flexGrow:1}}>
+              {navItems.map((item) => (
+                <Link key={item.id} to={item.path} component={RouterLink} >
+                <Button key={item.id} 
+                sx={{
+                  ':hover':{
+                    color:'highlghts.green'
+                  }
+                }}>
+                  {item.title}
+                </Button>
+                </Link>
+              ))}
+            </Grid>
+            </Grid>
           </Toolbar>
         </AppBar>
-      </Box>
-   
-  )
-}
+       
+        <Drawer
+          anchor="left"
+          open={drawerOpen}
+          onClose={handleDrawerToggle}
+          sx={{ display: { md: 'none' } }}
+        >
+          {drawer}
+        </Drawer>
+      </Grid></Grid>
+  );
+ };
+ 
+
 
 export default Nav
+
+
+//   return (
+ 
+//       <Box sx={{ 
+//         flexGrow: 1 ,
+       
+//       }}
+//       >
+//         <AppBar position="static"
+//         sx={{
+//           backgroundColor:'background.pink'
+//         }}>
+//           <Toolbar>
+//             <IconButton
+//               size="large"
+//               edge="start"
+//               color="inherit"
+//               aria-label="menu"
+//               sx={{ mr: 2 }}
+//             >
+//               <MenuOutlined />
+//             </IconButton>
+//             <Typography variant="h6" component="div" sx={{ flexGrow: 1 , color:'highlights'}}>
+//               Virbakes
+//             </Typography>
+//             <Link component={RouterLink} to='/contact'><Button color="inherit">contacto</Button></Link>
+//             <Link component={RouterLink} to='/products'><Button color="inherit">productos</Button></Link>
+//             <Link component={RouterLink} to='/'><Button color="inherit">home</Button></Link>
+
+            
+            
+            
+
+//           </Toolbar>
+//         </AppBar>
+//       </Box>
+   
+//   )
+// }
+
+

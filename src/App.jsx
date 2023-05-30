@@ -1,7 +1,8 @@
 import React from 'react';
+import AppTheme from './ThemeLayout/AppTheme';
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './router/AppRouter';
-import AppTheme from './ThemeLayout/AppTheme';
+
 
 function App() {
   return (

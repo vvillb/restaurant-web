@@ -9,7 +9,7 @@ const Home = () => {
         sx={{
             backgroundColor:'background.main'
         }}>
-           Home 
+           <h1>Virbakes</h1>>
         </Grid>
       
     </Layout>
