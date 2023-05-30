@@ -4,7 +4,7 @@ import React from 'react'
 import { MenuOutlined } from '@mui/icons-material';
 import {Link as RouterLink} from 'react-router-dom';
 import Link from '@mui/material/Link';
-
+import CookieIcon from '@mui/icons-material/Cookie';
 
 const navItems = [
   { id:1, title: 'home', path: '/' },
@@ -93,7 +93,7 @@ function Nav() {
                 color:'dark.main'
               }
             }}
-            >
+            ><CookieIcon/>
              <Typography variant="h6"   sx={{textTransform:'none', flexGrow: 1 ,color:'highlights.blue',':hover':{color:'backgorund.main'}}}> 
               virbakes
             </Typography>
