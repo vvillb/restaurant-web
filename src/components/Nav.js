@@ -29,7 +29,7 @@ function Nav() {
           <ListItem key={item.id} disablePadding>
             <Link component={RouterLink} to={item.path} onClick={handleDrawerToggle} underline="none"
 >
-            <Button
+            <Button variant='nav'
             sx={{ 
               
               

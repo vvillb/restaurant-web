@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material'
+import { Button, Grid, Link, Typography } from '@mui/material'
 import React from 'react'
 import cajita from '../assets/images/cajas.jpg'
 import tarta from '../assets/images/tartaDDL.jpg'
@@ -7,8 +7,11 @@ function Hero() {
   return (
 
   <Grid container >
-    <Grid item xs={12} sm={6}
+    <Grid item xs={12} sm={6} 
+   
+     
     sx={{
+     
       background:`url(${cajita})`,
       backgroundSize:'cover',       
       aspectRatio:1.25,
@@ -20,6 +23,14 @@ function Hero() {
       }}>
         Disfrútalos a bocados
       </Typography>
+      <Link >
+        <Button variant='contained' sx={{
+          
+        }}>
+          Ver cajas
+        </Button>
+      </Link>
+      
     </Grid>
     <Grid item
     sx={{

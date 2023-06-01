@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 export const VirbakesTheme=createTheme( {
     
@@ -57,15 +58,26 @@ export const VirbakesTheme=createTheme( {
                 root: {
                   fontSize: '0.8rem',
                   textDecoration:'none',
-                  color:'#2f365f'
+                  color:'#2f365f',
+                  
                 },
+                contained:{
+                    backgroundColor:'#2f365f',
+                    color:'#f7f1ed',
+                    ':hover':{
+                        backgroundColor:'#febeb0'
+                    }  
+                    
+                },
+             
               },
         },
         MuiLink:{
             styleOverrides:{
                 root:{
                     textDecoration:'none',
-                    textTransform:'lowercase'
+                    textTransform:'lowercase',
+                    
                 }
             }
         }
