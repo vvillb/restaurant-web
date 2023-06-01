@@ -8,8 +8,9 @@ import CookieIcon from '@mui/icons-material/Cookie';
 
 const navItems = [
   { id:1, title: 'home', path: '/' },
-  { id:2, title: 'productos', path: '/products' },
-  { id:3, title: 'contacto', path: '/contact' },
+  { id:2, title: 'cajas', path: '/cajas' },
+  { id:3, title: 'tartas', path: '/tartas' },
+  { id:4, title: 'contacto', path: '/contact' },
   
 ];
 
