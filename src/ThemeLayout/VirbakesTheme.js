@@ -15,15 +15,19 @@ export const VirbakesTheme=createTheme( {
            
     }, typography:{
         h1:{
-            fontFamily: "'Abril Fatface' ,'Playfair Display'"
+            fontFamily: "'Abril Fatface' ,'Playfair Display'",
+            color:'#2f365f'
         },
         h2:{
-            fontFamily:  "'Abril Fatface','Playfair Display'"
+            fontFamily:  "'Abril Fatface','Playfair Display'",
+            color:'#2f365f'
         },
         h3:{
-            fontFamily: "'Fira Sans','Cormorant Garamond'"
+            fontFamily: "'Fira Sans','Cormorant Garamond'",
+            color:'#2f365f'
         },h4:{
-            fontFamily:  "'Abril Fatface','Playfair Display'"
+            fontFamily:  "'Abril Fatface','Playfair Display'",
+            WebkitTextStroke:"1px #f7f1ed"
         },
         h5:{
             fontFamily: "'Fira Sans','Cormorant Garamond'"  

@@ -11,6 +11,7 @@ const navItems = [
   { id:2, title: 'cajas', path: '/cajas' },
   { id:3, title: 'tartas', path: '/tartas' },
   { id:4, title: 'contacto', path: '/contact' },
+  {id:5, title:'pedidos', path:'/pedidos'}
   
 ];
 

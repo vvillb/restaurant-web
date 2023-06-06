@@ -5,6 +5,7 @@ import Contact from '../pages/Contact'
 import Products from '../pages/Products'
 import Cajas from '../pages/Cajas'
 import Tartas from '../pages/Tartas'
+import Pedidos from '../pages/Pedidos'
 
 const AppRouter = () => {
   return (
@@ -15,6 +16,7 @@ const AppRouter = () => {
         < Route path='/contact' element={<Contact/>}/>
         < Route path='/cajas' element={<Cajas/>}/>
         < Route path='/tartas' element={<Tartas/>}/>
+        <Route path='/pedidos' element={<Pedidos/>}/>
 
 
     </Routes>
