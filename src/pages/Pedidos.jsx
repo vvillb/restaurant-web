@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Layout from '../ThemeLayout/Layout'
-import { Box, Checkbox, FormControl, Grid, InputLabel, ListItemText, MenuItem, OutlinedInput, Select, TextField, Typography } from '@mui/material'
+import { Box, Button, Checkbox, FormControl, Grid, InputLabel, ListItemText, MenuItem, OutlinedInput, Select, TextField, Typography } from '@mui/material'
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import 'dayjs/locale/es';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -23,7 +23,11 @@ const productos=[
 
 
 const Pedidos = () => {
+  const [nombre,setNombre]=useState('');
   const [pedido,setPedido]=useState([]);
+  const [fecha,setFecha]=useState('');
+  const [comment,setComment]=useState('');
+  const[phone,setPhone]=useState('');
 
   const handleChange = (event) => {
     const {
@@ -39,8 +43,13 @@ const Pedidos = () => {
 
   return (
     <Layout>
-        <Grid container>
-            <Grid item padding='10%'>
+        <Grid container
+        sx={{
+          maxWidth:'100vw'
+        }}
+        >
+            <Grid item padding='10%'
+            maxWidth='100vw'>
                 <Typography variant='h2' >Estás a un paso de disfrutarlo...</Typography>
                 <Typography variant='h3'>Rellena el formulario y me pondré en contacto contigo</Typography>
             </Grid>
@@ -48,6 +57,7 @@ const Pedidos = () => {
                 component="form"
                 sx={{
                    paddingLeft:'10%',
+                   paddingBottom:'10%',
                    justifyContent:'center',
                    display:'grid'
                    
@@ -56,14 +66,18 @@ const Pedidos = () => {
                 autoComplete="on"
                 >
                     
-                         <TextField id="outlined-basic" label="Nombre" variant="outlined" 
+                         <TextField id="outlined-basic" label="Nombre" variant="outlined" required
+                         onChange={e=>setNombre(e.target.value)} 
                          sx={{
-                            width:'80vw'
+                            width:'80vw',
+                            marginBottom:'3%'
                          }}/>
                             <InputLabel id="demo-multiple-checkbox-label">Selecciona los productos que desees</InputLabel>
                             <Select
                                 sx={{
-                                    width:'80vw'
+                                    width:'80vw',
+                                    marginTop:'2%',
+                                    marginBottom:'3%'
                                 }}
                                 
                                 labelId="demo-multiple-checkbox-label"
@@ -83,10 +97,34 @@ const Pedidos = () => {
                                     </MenuItem>
                                 ))}
                             </Select>
-                            <InputLabel id="demo-multiple-checkbox-label">¿Para cuándo sería el pedido?</InputLabel>
+
+                            <TextField id="outlined-basic" label="comentario" variant="outlined" 
+                            onChange={e=>setComment(e.target.value)} 
+                              sx={{
+                                  width:'80vw',
+                                  marginTop:'1%',
+                                  
+                              }}/>
+
+
+                            <InputLabel id="demo-multiple-checkbox-label" sx={{marginTop:'3%'}}>¿Para cuándo sería el pedido?</InputLabel>
                             <LocalizationProvider adapterLocale={es} dateAdapter={AdapterDayjs}>
-                                <DatePicker label="fecha" format='DD-MM-YYYY' />                          
+                                <DatePicker label="fecha" format='DD-MM-YYYY' sx={{marginTop:'2%'}}
+                                />                          
                             </LocalizationProvider>
+
+                            <InputLabel id="demo-multiple-checkbox-label" sx={{marginTop:'3%'}}>Te contactaré por whatsapp</InputLabel>
+
+                            <TextField id="outlined-basic" label="Teléfono" variant="outlined" type='tel' required
+                            onChange={e=>setPhone(e.target.value)} 
+                              sx={{
+                                  width:'80vw',
+                                  marginTop:'2%',
+                                  marginBottom:'3%'
+                                  
+                              }}/>
+
+                              <Button variant='contained' type='submit'>Enviar</Button>
                     
                 
             </Grid>
