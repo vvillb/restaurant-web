@@ -2,8 +2,12 @@ import React, { useState } from 'react'
 import Layout from '../ThemeLayout/Layout'
 import { Box, Checkbox, FormControl, Grid, InputLabel, ListItemText, MenuItem, OutlinedInput, Select, TextField, Typography } from '@mui/material'
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import 'dayjs/locale/es';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import es from 'dayjs/locale/es';
+
+
 
 const productos=[
     'alfajores',
@@ -44,6 +48,8 @@ const Pedidos = () => {
                 component="form"
                 sx={{
                    paddingLeft:'10%',
+                   justifyContent:'center',
+                   display:'grid'
                    
                 }}
                 noValidate
@@ -54,11 +60,12 @@ const Pedidos = () => {
                          sx={{
                             width:'80vw'
                          }}/>
-                            <InputLabel id="demo-multiple-checkbox-label">Selecciona los prodcutos que desees</InputLabel>
+                            <InputLabel id="demo-multiple-checkbox-label">Selecciona los productos que desees</InputLabel>
                             <Select
                                 sx={{
                                     width:'80vw'
                                 }}
+                                
                                 labelId="demo-multiple-checkbox-label"
                                 id="demo-multiple-checkbox"
                                 multiple
@@ -76,8 +83,9 @@ const Pedidos = () => {
                                     </MenuItem>
                                 ))}
                             </Select>
-                            <LocalizationProvider dateAdapter={AdapterDayjs}>
-                                <DatePicker label="fecha" />                          
+                            <InputLabel id="demo-multiple-checkbox-label">¿Para cuándo sería el pedido?</InputLabel>
+                            <LocalizationProvider adapterLocale={es} dateAdapter={AdapterDayjs}>
+                                <DatePicker label="fecha" format='DD-MM-YYYY' />                          
                             </LocalizationProvider>
                     
                 

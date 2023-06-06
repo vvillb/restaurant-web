@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material";
-import { hover } from "@testing-library/user-event/dist/hover";
+import { esES } from 'dayjs/locale/es';
 
 export const VirbakesTheme=createTheme( {
     
@@ -13,7 +13,9 @@ export const VirbakesTheme=createTheme( {
                 blue:'#2f365f'
            },        
            
-    }, typography:{
+    }, 
+        esES,
+    typography:{
         h1:{
             fontFamily: "'Abril Fatface' ,'Playfair Display'",
             color:'#2f365f'
