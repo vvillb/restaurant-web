@@ -28,6 +28,7 @@ const Pedidos = () => {
   const [fecha,setFecha]=useState('');
   const [comment,setComment]=useState('');
   const[phone,setPhone]=useState('');
+  const [formError,setFormError]=useState(false)
 
   const handleChange = (event) => {
     const {
@@ -40,6 +41,22 @@ const Pedidos = () => {
   };
 
 
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    if (nombre===''||pedido.length===0||phone===''){
+      setFormError(true);
+      return
+    }
+
+    setFormError(false);
+    alert('Enviado! :)');
+
+  }
+  const validatePhone = (phone) => {
+    // Regular expression for phone number validation
+    const phoneRegex = /^\d{10}$/;
+    return phoneRegex.test(phone);
+  };
 
   return (
     <Layout>
@@ -55,6 +72,7 @@ const Pedidos = () => {
             </Grid>
             <Grid item
                 component="form"
+                onSubmit={handleSubmit}
                 sx={{
                    paddingLeft:'10%',
                    paddingBottom:'10%',
@@ -123,6 +141,11 @@ const Pedidos = () => {
                                   marginBottom:'3%'
                                   
                               }}/>
+                          {formError && (
+                            <Typography variant="body2" color="error">
+                              Todos los campos son requeridos.
+                            </Typography>
+                          )}
 
                               <Button variant='contained' type='submit'>Enviar</Button>
                     
