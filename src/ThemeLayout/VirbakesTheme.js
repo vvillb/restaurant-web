@@ -75,6 +75,9 @@ export const VirbakesTheme=createTheme( {
                     }  
                     
                 },
+                outlined:{
+                    borderColor:'#2f365f'
+                }
              
               },
         },

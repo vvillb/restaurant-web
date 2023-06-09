@@ -63,7 +63,7 @@ const Cajas = () => {
             titulo='alfajores'
             descripcion='Rellenos de dulce de leche y bañados en chocolate'
             precio='15'
-            enlace='/tartas'
+            enlace='/alfajores'
             />
           </Grid>
           <Grid item xs={12} sm={4}>
