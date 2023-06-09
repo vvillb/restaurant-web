@@ -3,7 +3,11 @@ import Layout from '../ThemeLayout/Layout'
 import { Grid, Typography } from '@mui/material'
 import tarta from '../assets/images/tartas1.jpg'
 import tarta2 from '../assets/images/tartas3.jpg'
-
+import PhotoRightTextLeft from '../assets/utils/PhotoRightTextLeft'
+import PhotoLeftTextRight from '../assets/utils/PhotoLeftTextRight'
+import tartaDDL from '../assets/images/tartaDDL.jpg'
+import cheesecake from '../assets/images/cheesecake1.jpg'
+import deathbychoc from '../assets/images/tartaChoco.jpg'
 const Tartas = () => {
   return (
     <Layout>
@@ -28,6 +32,15 @@ const Tartas = () => {
             Minim Lorem occaecat ipsum dolor consequat sint minim in aliqua Lorem pariatur duis.Aute reprehenderit ullamco elit consequat ea exercitation quis nostrud adipisicing reprehenderit duis. Ex excepteur officia ea eiusmod magna aute ullamco commodo aliquip laborum ad ut. Laboris duis sunt magna do in reprehenderit. Ad deserunt non deserunt velit mollit Lorem culpa cupidatat cillum eiusmod quis incididunt. Consectetur enim adipisicing reprehenderit do elit aliquip incididunt velit ea sunt. Cillum enim non ea culpa pariatur ullamco voluptate sint non ad pariatur.
           </Typography>
         </Grid>
+        <PhotoRightTextLeft image={tartaDDL}  titulo="Bzicocho marmolado" >
+          Bizcocho marmolado relleno de dulce de leche
+       </PhotoRightTextLeft>
+        <PhotoLeftTextRight image={cheesecake} direction="row" titulo="cheesecake" >
+          Voluptate velit pariatur sint quis irure nulla officia elit ea dolore cupidatat labore. Irure labore eu id esse. Amet amet minim ut laboris.
+        </PhotoLeftTextRight>
+        <PhotoRightTextLeft image={deathbychoc}  titulo="tarta death by choclate" >
+          Voluptate velit pariatur sint quis irure nulla officia elit ea dolore cupidatat labore. Irure labore eu id esse. Amet amet minim ut laboris.
+        </PhotoRightTextLeft>
       </Grid>
       
     </Layout>
