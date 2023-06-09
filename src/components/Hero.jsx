@@ -28,8 +28,7 @@ function Hero() {
       <Typography variant='h4' xs={12} sm={6}
       sx={{
         color:'background.pink',
-        textShadow:'4px 4px 4px rgba(0,0,0,0.6)',
-        padding:'10%',
+        margin:'10%',
         
       }}>
         Disfrútalos a bocados
@@ -61,8 +60,8 @@ function Hero() {
       <Typography variant='h4'
       sx={{
         color:'background.pink',
-        textShadow:'4px 4px 4px rgba(0,0,0,0.6)',
-        padding:'10%'
+        // textShadow:'4px 4px 4px rgba(0,0,0,0.6)',
+        margin:'10%',
       }}>
         Para ocasiones epeciales
       </Typography>

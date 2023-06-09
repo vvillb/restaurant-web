@@ -53,10 +53,11 @@ function Nav() {
   );
 
   return (
-    <Grid container>
+    <Grid container sx={{zIndex:9999}}>
     <Grid
     justifyContent='center'
     sx={{
+      zIndex:1,
       backgroundColor:'highlights.green',
       maxWidth:'100vw', 
       position: 'fixed', left: 0, right: 0,top:0,
@@ -73,7 +74,7 @@ function Nav() {
 
     </Grid>
        
-        <AppBar   sx={{maxWidth:'100vw', position: 'fixed', left: 0, right: 0,top:'4vh'}}>
+        <AppBar   sx={{maxWidth:'100vw', position: 'fixed', left: 0, right: 0,top:'4vh',zIndex:9999}}>
           <Toolbar  sx={{textAlign:'left', justifyContent:'space-around',backgroundColor:'background.pink'}}>
             <IconButton
               size="large"
