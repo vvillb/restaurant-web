@@ -2,9 +2,8 @@ import React from 'react'
 import Layout from '../../ThemeLayout/Layout'
 import { Button, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material'
 import Carousel from 'react-material-ui-carousel'
-import foto1 from '../../assets/images/cookies2.jpg'
-import foto2 from '../../assets/images/cookies4.gif'
-import foto3 from '../../assets/images/cookies3.jpg'
+import foto1 from '../../assets/images/supercookies1.jpg'
+import foto3 from '../../assets/images/supercookies2vert.jpg'
 
 const SuperCookies = () => {
   return (
@@ -25,16 +24,7 @@ const SuperCookies = () => {
                     alt="An image"
                     />
                 </Card>
-                <Card sx={{  height:{xs:'40vh',sm:'75vh'},  backgroundColor:'transparent',alignItems:'center', margin: 'auto',padding:'2%'}}>
-                <CardMedia
-                    sx={{zIndex:999}}
 
-                    component="img"
-                    loading="lazy" 
-                    image={foto2}
-                    alt="An image"
-                    />
-                </Card>
                 <Card sx={{  height:{xs:'40vh',sm:'75vh'}, backgroundColor:'transparent',alignItems:'center',margin: 'auto',padding:'2%'}}>
                 <CardMedia
                     sx={{ }}
@@ -64,15 +54,15 @@ const SuperCookies = () => {
                     </Typography>
                     <Button variant='outlined'>
                    
-                        Caja de 12 alfajores: 15.50 € 
+                        Caja de 4: 8.00 € 
                     </Button>
                     <Button variant='outlined'>
                    
-                        Caja de 18 alfajores: 22.50 € 
+                        Caja de 6: 10.50 € 
                     </Button>
                     <Button variant='outlined'>
                    
-                        Caja de 24 alfajores: 25.00 € 
+                        Caja de 8: 14.00 € 
                     </Button>
                 </CardContent>
             </Card>

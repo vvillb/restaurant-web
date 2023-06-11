@@ -2,9 +2,8 @@ import React from 'react'
 import Layout from '../../ThemeLayout/Layout'
 import { Button, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material'
 import Carousel from 'react-material-ui-carousel'
-import foto1 from '../../assets/images/cookies2.jpg'
-import foto2 from '../../assets/images/cookies4.gif'
-import foto3 from '../../assets/images/cookies3.jpg'
+import foto1 from '../../assets/images/granola2.jpg'
+import foto3 from '../../assets/images/granola1.jpg'
 
 const Granola = () => {
   return (
@@ -25,16 +24,7 @@ const Granola = () => {
                 alt="An image"
                 />
             </Card>
-            <Card sx={{  height:{xs:'40vh',sm:'75vh'},  backgroundColor:'transparent',alignItems:'center', margin: 'auto',padding:'2%'}}>
-            <CardMedia
-                sx={{zIndex:999}}
-
-                component="img"
-                loading="lazy" 
-                image={foto2}
-                alt="An image"
-                />
-            </Card>
+      
             <Card sx={{  height:{xs:'40vh',sm:'75vh'}, backgroundColor:'transparent',alignItems:'center',margin: 'auto',padding:'2%'}}>
             <CardMedia
                 sx={{ }}
@@ -64,16 +54,13 @@ const Granola = () => {
                 </Typography>
                 <Button variant='outlined'>
                
-                    Caja de 12 cookies: 12.00 € 
+                    150 gr: 8.00 € 
                 </Button>
                 <Button variant='outlined'>
                
-                    Caja de 18 cookies: 16.00 € 
+                    300 gr: 12.00 € 
                 </Button>
-                <Button variant='outlined'>
-               
-                    Caja de 24 cookies: 18.00 € 
-                </Button>
+                
             </CardContent>
         </Card>
 
