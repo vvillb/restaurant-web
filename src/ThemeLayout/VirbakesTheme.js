@@ -56,7 +56,17 @@ export const VirbakesTheme=createTheme( {
         },
         overline:{
             fontFamily: "'Fira Sans','Cormorant Garamond'" 
-        },        
+        },  
+        h3Smaller:{
+            fontFamily:  "'Abril Fatface','Playfair Display'",
+            color:'#2f365f',
+            fontSize:'200%'
+        },
+        h3med:{
+            fontFamily:  "'Abril Fatface','Playfair Display'",
+            color:'#2f365f',
+            fontSize:'250%'
+        },   
        
     },components:{
         MuiButton:{

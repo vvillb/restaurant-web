@@ -58,7 +58,7 @@ const Alfajores = () => {
                     height:{xs:'40vh',sm:'75vh'},
                     padding:'5%'
                 }}>
-                    <Typography variant='h3' gutterBottom>
+                    <Typography sx={{typography: {lg: 'h3', sm:'h3med' ,xs: 'h3Smaller' } }}  gutterBottom>
                         Alfajores
                     </Typography>
                     <Typography variant='body2' component="div">

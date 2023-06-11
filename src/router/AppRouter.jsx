@@ -11,6 +11,7 @@ import Brownie from '../pages/productos/Brownie'
 import CinammonRolls from '../pages/productos/CinammonRolls'
 import Cookies from '../pages/productos/Cookies'
 import SuperCookies from '../pages/productos/SuperCookies'
+import Granola from '../pages/productos/Granola'
 
 const AppRouter = () => {
   return (
@@ -27,6 +28,8 @@ const AppRouter = () => {
         <Route path='/cajas/cinammonrolls' element={<CinammonRolls/>} />
         <Route path='/cajas/cookies' element={<Cookies/>} />
         <Route path='/cajas/supercookies' element={<SuperCookies/>} />
+        <Route path='/cajas/granola' element={<Granola/>} />
+
 
 
 

@@ -6,6 +6,14 @@ import { useInView } from 'react-intersection-observer'
 import ProductCard from '../assets/elements/ProductCard'
 
 import alfajores from '../assets/images/alfajores1.jpg'
+import brownie from '../assets/images/brownie1.jpg'
+import cookies from '../assets/images/cookies3.jpg'
+import cinammonrolls from '../assets/images/cinammonRolls1.jpg'
+import supercookies from '../assets/images/supercookies2.jpg'
+import granola from '../assets/images/granola1.jpg'
+
+
+
 
 const Cajas = () => {
 
@@ -55,7 +63,7 @@ const Cajas = () => {
         sx={{backgroundColor:'background.main'}}
         >
           <Grid item
-          xs={12} sm={4}>
+          xs={12} md={4} sm={6}>
              <ProductCard
            sx={{
             }}
@@ -66,72 +74,62 @@ const Cajas = () => {
             enlace='/cajas/alfajores'
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12}  md={4} sm={6}>
              <ProductCard
            sx={{
             }}
-            img={alfajores}
-            titulo='alfajores'
-            descripcion='Rellenos de dulce de leche y bañados en chocolate'
-            precio='15'
-            enlace='/tartas'
+            img={brownie}
+            titulo='brownie'
+            descripcion='Con toppings brutales'
+            precio='15.50'
+            enlace='/cajas/brownie'
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} md={4} sm={6}>
              <ProductCard
            sx={{
             }}
-            img={alfajores}
-            titulo='alfajores'
-            descripcion='Rellenos de dulce de leche y bañados en chocolate'
-            precio='15'
-            enlace='/tartas'
+            img={cookies}
+            titulo='cookies'
+            descripcion='Eres más de crunchy o de chewy???'
+            precio='12'
+            enlace='/cajas/cookies'
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} md={4} sm={6}>
              <ProductCard
            sx={{
             }}
-            img={alfajores}
-            titulo='alfajores'
-            descripcion='Rellenos de dulce de leche y bañados en chocolate'
-            precio='15'
-            enlace='/tartas'
+            img={cinammonrolls}
+            titulo='cinammon rolls'
+            descripcion='Disfrútalos calentitos'
+            precio='14'
+            enlace='/cajas/cinammonrolls'
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12}  md={4} sm={6}>
              <ProductCard
            sx={{
             }}
-            img={alfajores}
-            titulo='alfajores'
-            descripcion='Rellenos de dulce de leche y bañados en chocolate'
-            precio='15'
-            enlace='/tartas'
+            img={supercookies}
+            titulo='super cookies'
+            descripcion='Rellenas de nutella...'
+            precio='8'
+            enlace='/cajas/supercookies'
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} md={4} sm={6}>
              <ProductCard
            sx={{
             }}
-            img={alfajores}
-            titulo='alfajores'
-            descripcion='Rellenos de dulce de leche y bañados en chocolate'
-            precio='15'
-            enlace='/tartas'
+            img={granola}
+            titulo='granola'
+            descripcion='Deliciosa y saludable'
+            precio='6.50'
+            enlace='/cajas/granola'
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
-             <ProductCard
-           sx={{
-            }}
-            img={alfajores}
-            titulo='alfajores'
-            descripcion='Rellenos de dulce de leche y bañados en chocolate'
-            precio='15'
-            enlace='/tartas'
-            />
-          </Grid>
+          
          
         </Grid>
       </Grid>
