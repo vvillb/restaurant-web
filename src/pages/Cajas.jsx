@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../ThemeLayout/Layout'
 import { Grid, Typography } from '@mui/material'
 import cookiesBackground from '../assets/images/cajas.jpg'
@@ -17,7 +17,10 @@ import surtido from '../assets/images/surtido2.jpg'
 
 
 const Cajas = () => {
-
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  
+  },[])
 
 
   return (

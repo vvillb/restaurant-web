@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../ThemeLayout/Layout'
 import { Grid, Typography } from '@mui/material'
 import tarta from '../assets/images/tartas1.jpg'
@@ -14,6 +14,10 @@ import tartaAlfajor from '../assets/images/tartaAlfajor.jpg'
 
 
 const Tartas = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  
+  },[])
   return (
     <Layout>
       <Grid container maxWidth='100vw' overflow='hidden'>

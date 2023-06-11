@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../ThemeLayout/Layout'
 import { Card, CardMedia, Grid, Typography } from '@mui/material'
 import Hero from '../components/Hero'
 
 
 const Home = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  
+  },[])
   return (
     <Layout>
         <Grid container

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../ThemeLayout/Layout'
 import { Button, Grid, Link, Typography } from '@mui/material'
 import {Link as RouterLink} from 'react-router-dom';
@@ -7,6 +7,10 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import me from '../assets/images/me.jpg'
 
 const Contact = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  
+  },[])
   return (
     <Layout>
         <Grid container
