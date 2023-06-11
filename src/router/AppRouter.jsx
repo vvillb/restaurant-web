@@ -7,6 +7,10 @@ import Cajas from '../pages/Cajas'
 import Tartas from '../pages/Tartas'
 import Pedidos from '../pages/Pedidos'
 import Alfajores from '../pages/productos/Alfajores'
+import Brownie from '../pages/productos/Brownie'
+import CinammonRolls from '../pages/productos/CinammonRolls'
+import Cookies from '../pages/productos/Cookies'
+import SuperCookies from '../pages/productos/SuperCookies'
 
 const AppRouter = () => {
   return (
@@ -18,7 +22,12 @@ const AppRouter = () => {
         < Route path='/cajas' element={<Cajas/>}/>
         < Route path='/tartas' element={<Tartas/>}/>
         <Route path='/pedidos' element={<Pedidos/>}/>
-        <Route path='/alfajores' element={<Alfajores/>} />
+        <Route path='/cajas/alfajores' element={<Alfajores/>} />
+        <Route path='/cajas/brownie' element={<Brownie/>} />
+        <Route path='/cajas/cinammonrolls' element={<CinammonRolls/>} />
+        <Route path='/cajas/cookies' element={<Cookies/>} />
+        <Route path='/cajas/supercookies' element={<SuperCookies/>} />
+
 
 
     </Routes>
