@@ -11,6 +11,7 @@ import cookies from '../assets/images/cookies3.jpg'
 import cinammonrolls from '../assets/images/cinammonRolls1.jpg'
 import supercookies from '../assets/images/supercookies2.jpg'
 import granola from '../assets/images/granola1.jpg'
+import surtido from '../assets/images/surtido2.jpg'
 
 
 
@@ -129,7 +130,17 @@ const Cajas = () => {
             enlace='/cajas/granola'
             />
           </Grid>
-          
+          <Grid item xs={12} md={4} sm={6}>
+             <ProductCard
+           sx={{
+            }}
+            img={surtido}
+            titulo='surtido'
+            descripcion='No sabes qué escoger o quieres probarlo todo?'
+            precio='13.50'
+            enlace='/cajas/surtido'
+            />
+          </Grid>
          
         </Grid>
       </Grid>
