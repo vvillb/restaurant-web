@@ -29,7 +29,7 @@ function Hero() {
       sx={{
         color:'background.pink',
         margin:'10%',
-        
+        background:"#f7f1ed"
       }}>
         Disfrútalos a bocados
       </Typography>
@@ -62,6 +62,7 @@ function Hero() {
         color:'background.pink',
         // textShadow:'4px 4px 4px rgba(0,0,0,0.6)',
         margin:'10%',
+        background:"#f7f1ed"
       }}>
         Para ocasiones epeciales
       </Typography>

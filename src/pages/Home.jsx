@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Layout from '../ThemeLayout/Layout'
 import { Card, CardMedia, Grid, Typography } from '@mui/material'
 import Hero from '../components/Hero'
+import Destacados from '../components/Destacados'
 
 
 const Home = () => {
@@ -26,7 +27,9 @@ const Home = () => {
           <Grid item xs={12}>
             <Hero/>
           </Grid>
-          
+          <Grid item xs={12}>
+            <Destacados/>
+          </Grid>
         </Grid>
       
     </Layout>

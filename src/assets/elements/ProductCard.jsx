@@ -21,7 +21,7 @@ const ProductCard = (props) => {
         }}/>
      
         <CardContent>
-        <Typography gutterBottom variant="h3" component="div" color='highlights.blue'>
+        <Typography gutterBottom variant="h4" component="div" color='highlights.blue'>
             {titulo}
         </Typography>
             <Typography variant='body2'>

@@ -29,7 +29,7 @@ export const VirbakesTheme=createTheme( {
             color:'#2f365f'
         },h4:{
             fontFamily:  "'Abril Fatface','Playfair Display'",
-            background:"#f7f1ed"
+           
         },
         h5:{
             fontFamily: "'Fira Sans','Cormorant Garamond'"  
