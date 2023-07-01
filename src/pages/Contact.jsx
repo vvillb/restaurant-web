@@ -16,17 +16,18 @@ const Contact = () => {
         <Grid container
         spacing={2}
         minHeight='100vh'
+        
         sx={{backgroundColor:'background.main'}}
         >
-          <Grid item xs={12} md={6} display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
-            <Typography variant='h1' padding='10%'>
+          <Grid item xs={12} md={6} display='flex' flexDirection='column' justifyContent='center' alignItems='center' >
+            <Typography variant='h2' padding='10%' maxWidth='100vw'>
                ¿Qué te apetece? Hablemos!
             </Typography>
             
                 <Typography variant='h5'>                
                 Escríbeme por whatsapp o envíame un mensaje directo a través de instagram
                 </Typography>
-                <Grid item display='flex' flexDirection='row' >
+                <Grid item display='flex' flexDirection='row'  >
                   <Grid item sx={{margin:'5%'}} >
                     <Link component={RouterLink} to='https://wa.me/34687095451'>
                   <Button variant='contained' >
