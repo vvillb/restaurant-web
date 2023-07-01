@@ -49,9 +49,12 @@ const CinammonRolls = () => {
                     <Typography sx={{ typography: {lg: 'h3', sm:'h3med' ,xs: 'h3Smaller' } }} gutterBottom>
                         Cinammon Rolls
                     </Typography>
-                    <Typography variant='body2' component="div">
-                        Elit irure esse aliqua sint non veniam ad ut laborum id. Ullamco nulla voluptate non aute esse elit mollit est ea fugiat ex aliqua. Enim ut laboris incididunt exercitation. Do minim amet officia excepteur incididunt ea nulla.
-                    </Typography>
+                    <Typography variant='body2' component="div" textAlign='justify'>
+                    Descubre la delicia de estos Cinnamon Rolls, esos rollos de canela tan irresistibles. 
+                    Te aseguro que su aroma y sabor te conquistarán al instante. Además, 
+                    puedes personalizarlos con tus toppings favoritos, como glaseado de crema de 
+                    queso o nueces caramelizadas. <br/> ¡Déjate llevar por el placer de cada bocado y 
+                    disfruta de un verdadero capricho!                    </Typography>
                     <Button variant='outlined'>
                    
                         Caja (8 rollitos grandes): 24.00 € 

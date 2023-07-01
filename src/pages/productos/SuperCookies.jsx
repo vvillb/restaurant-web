@@ -50,8 +50,12 @@ const SuperCookies = () => {
                         Súper Cookies
                     </Typography>
                     <Typography variant='body2' component="div">
-                        Elit irure esse aliqua sint non veniam ad ut laborum id. Ullamco nulla voluptate non aute esse elit mollit est ea fugiat ex aliqua. Enim ut laboris incididunt exercitation. Do minim amet officia excepteur incididunt ea nulla.
-                    </Typography>
+                    Prepárate para una explosión de sabor con las Super Cookies. 
+                    Estas deliciosas galletas tienen un giro especial: ¡están rellenas de 
+                    irresistible Nutella o crema de avellanas! Cada mordisco es una locura 
+                    de texturas y sabores que te dejará con ganas de más. ¿Estás listo para 
+                    probar la combinación perfecta de crujiente por fuera y suave relleno por 
+                    dentro?         </Typography>
                     <Button variant='outlined'>
                    
                         Caja de 4: 8.00 € 

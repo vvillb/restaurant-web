@@ -54,7 +54,11 @@ const Cajas = () => {
 
         <Grid item xs={12} backgroundColor='background.main'>
           <Typography variant='h5' paddingLeft='10%' paddingRight='10%'>
-            Minim Lorem occaecat ipsum dolor consequat sint minim in aliqua Lorem pariatur duis.Aute reprehenderit ullamco elit consequat ea exercitation quis nostrud adipisicing reprehenderit duis. Ex excepteur officia ea eiusmod magna aute ullamco commodo aliquip laborum ad ut. Laboris duis sunt magna do in reprehenderit. Ad deserunt non deserunt velit mollit Lorem culpa cupidatat cillum eiusmod quis incididunt. Consectetur enim adipisicing reprehenderit do elit aliquip incididunt velit ea sunt. Cillum enim non ea culpa pariatur ullamco voluptate sint non ad pariatur.
+          Desde irresistibles alfajores hasta  exquisitos brownies, cookies y cinnamon rolls, 
+          encontrarás una variedad de opciones que te harán la boca agua. Estas cajitas  están disponibles en
+           varios tamaños, perfectos para compartir o disfrutar en solitario. Ya sea para regalar a alguien especial 
+           o para darte un capricho, las cajas de virbakes son el regalo original que estás buscando. Explora las opciones
+            y elige el sabor que más te guste. ¡Te garantizo una experiencia deliciosa!
           </Typography>
         </Grid>
 

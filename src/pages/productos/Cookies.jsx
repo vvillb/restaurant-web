@@ -49,9 +49,12 @@ const Cookies = () => {
                     <Typography sx={{typography: {lg: 'h3', sm:'h3med' ,xs: 'h3Smaller' } }}  gutterBottom>
                         Cookies
                     </Typography>
-                    <Typography variant='body2' component="div">
-                        Elit irure esse aliqua sint non veniam ad ut laborum id. Ullamco nulla voluptate non aute esse elit mollit est ea fugiat ex aliqua. Enim ut laboris incididunt exercitation. Do minim amet officia excepteur incididunt ea nulla.
-                    </Typography>
+                    <Typography variant='body2' component="div" textAlign='justify'>
+                    Prepárate para una experiencia de sabor irresistible con estas cookies. 
+                    Ya te digo yo que no podrás comer solo una...
+                    Disponibles en versiones clásicas, de doble chocolate o surtidas, 
+                    estas  cookies son el complemento perfecto para cualquier momento dulce. <br/>
+                    ¡Solo tienes que pedírmelas y te aseguro que te cautivarán!                    </Typography>
                     <Button variant='outlined'>
                    
                         Caja de 12 cookies: 12.00 € 

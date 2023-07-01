@@ -50,8 +50,10 @@ const Granola = () => {
                     Granola
                 </Typography>
                 <Typography variant='body2' component="div">
-                    Elit irure esse aliqua sint non veniam ad ut laborum id. Ullamco nulla voluptate non aute esse elit mollit est ea fugiat ex aliqua. Enim ut laboris incididunt exercitation. Do minim amet officia excepteur incididunt ea nulla.
-                </Typography>
+                Descubre la granola saludable de virbakes, un verdadero deleite para tu paladar y tu bienestar. 
+                 Disfruta de cada bocado crujiente y nutritivo, lleno 
+                de ingredientes naturales y sin aditivos innecesarios.<br/>Ideal para tus desayunos o meriendas
+                 ¡Descubre lo deliciosamente saludable que puede ser!                </Typography>
                 <Button variant='outlined'>
                
                     150 gr: 8.00 € 

@@ -60,15 +60,19 @@ const Surtidos = () => {
                     Surtido
                 </Typography>
                 <Typography variant='body2' component="div">
-                    Elit irure esse aliqua sint non veniam ad ut laborum id. Ullamco nulla voluptate non aute esse elit mollit est ea fugiat ex aliqua. Enim ut laboris incididunt exercitation. Do minim amet officia excepteur incididunt ea nulla.
-                </Typography>
+                Una selección perfecta para eventos y ocasiones especiales.
+                 Te ofrezco una caja llena de delicias donde podrás disfrutar de una 
+                 variedad de productos exquisitos. 
+                 Desde los irresistibles alfajores hasta el jugoso brownie, unas deliciosas trufas y
+                   tentadores cupcakes, encontrarás una combinación perfecta de sabores y texturas.<br/>
+                    Prepara tu paladar para un festín de dulzura y sorpresas.                </Typography>
                 <Button variant='outlined'>
                
                     Caja de 12 (4 alfajores, 4 piezas de brownie , 4 cupcakes mini): 13.50 € 
                 </Button>
                 <Button variant='outlined'>
                
-                    Para más opciones contata conmigo
+                    Para más opciones contacta conmigo
                 </Button>
                
             </CardContent>

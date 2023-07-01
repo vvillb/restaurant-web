@@ -44,9 +44,10 @@ export const VirbakesTheme=createTheme( {
             fontFamily: "'Fira Sans','Cormorant Garamond'" 
         },
         body1:{
-            fontFamily: "'Fira Sans','Cormorant Garamond'"         },
+            fontFamily: "'Fira Sans','Cormorant Garamond'"  ,    textAlign:'justify'    },
+           
         body2:{
-            fontFamily: "'Fira Sans','Cormorant Garamond'" 
+            fontFamily: "'Fira Sans','Cormorant Garamond'" , textAlign:'justify'
         },
         button:{
             fontFamily: "'Fira Sans','Cormorant Garamond'" 

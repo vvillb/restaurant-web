@@ -50,8 +50,11 @@ const Brownie = () => {
                     <Typography sx={{typography: {lg: 'h3', sm:'h3med' ,xs: 'h3Smaller' } }}  gutterBottom>
                         Brownie
                     </Typography>
-                    <Typography variant='body2' component="div">
-                        Elit irure esse aliqua sint non veniam ad ut laborum id. Ullamco nulla voluptate non aute esse elit mollit est ea fugiat ex aliqua. Enim ut laboris incididunt exercitation. Do minim amet officia excepteur incididunt ea nulla.
+                    <Typography variant='body2' component="div" textAlign='justify'>
+                    Sumérgete en la indulgencia del brownie más delicioso que hayas probado.
+                     Este brownie es irresistiblemente chewy, con un intenso sabor a chocolate que 
+                     te cautivará desde el primer bocado y con los mejores toppings.<br/>¡No podrás resistirte a su tentación!
+
                     </Typography>
                     <Button variant='outlined'>
                    

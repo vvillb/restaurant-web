@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../../ThemeLayout/Layout'
-import { Button, Card, CardContent, CardMedia, Grid, Paper, Typography } from '@mui/material'
+import { Button, Card, CardContent, CardMedia, Divider, Grid, Paper, Typography } from '@mui/material'
 import Carousel from 'react-material-ui-carousel'
 import foto1 from '../../assets/images/alfajores1.jpg'
 import foto2 from '../../assets/images/alfajorees2.jpg'
@@ -61,8 +61,12 @@ const Alfajores = () => {
                     <Typography sx={{typography: {lg: 'h3', sm:'h3med' ,xs: 'h3Smaller' } }}  gutterBottom>
                         Alfajores
                     </Typography>
-                    <Typography variant='body2' component="div">
-                        Elit irure esse aliqua sint non veniam ad ut laborum id. Ullamco nulla voluptate non aute esse elit mollit est ea fugiat ex aliqua. Enim ut laboris incididunt exercitation. Do minim amet officia excepteur incididunt ea nulla.
+                    <Typography variant='body2' component="div" textAlign='justify'>
+                    Descubre la perfección en forma de dulce con estos irresistibles alfajores. 
+                    Rellenos de dulce de leche y delicadamente bañados en chocolate.
+                    Además de ser auténticas obras de arte, su sabor te 
+                    dejará sin palabras. ¿A qué esperas para probarlos? <br/>
+                     ¡No sabes lo que te estás perdiendo!
                     </Typography>
                     <Button variant='outlined'>
                    
